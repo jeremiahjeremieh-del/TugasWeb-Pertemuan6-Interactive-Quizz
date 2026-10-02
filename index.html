@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+
+        <h1> Interactive Quiz</h1>
+
+        <div class="quiz-content">
+
+            <div class="top-info">
+                <span id="progress">Soal 1/5</span>
+                <span id="score-display">Skor: 0</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+
+            <div id="question"></div>
+
+            <div id="options" class="options-grid"></div>
+
+            <button id="nextBtn" class="hidden">
+                Soal Berikutnya →
+            </button>
+
+        </div>
+
+        <div id="result" class="hidden">
+            <h2> Quiz Selesai!</h2>
+
+            <p>
+                Skor Kamu:
+                <strong id="score"></strong>
+            </p>
+
+            <p>
+                High Score:
+                <strong id="highScore"></strong>
+            </p>
+
+            <button id="restartBtn">
+                 Ulangi Quiz
+            </button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
